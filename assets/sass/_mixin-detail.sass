@@ -1,0 +1,65 @@
+// box sizing
+=box-sizing($box-model)
+  -webkit-box-sizing: $box-model
+  -moz-box-sizing:    $box-model
+  box-sizing:         $box-model
+
+*,*:after,*:before
+  +box-sizing(border-box)
+
+// box shadow
+=box-shadow($box-shadow)
+  -webkit-box-shadow: $box-shadow
+  -moz-box-shadow:    $box-shadow
+  box-shadow:         $box-shadow
+
+.menu li a,.skills ul li p,.box,.box-two,.post-all li a
+  +box-shadow((0 0 1px $box-shadow-style, 0 0 5px $box-shadow-style inset))
+
+// slow color effect
+=transition($color-easy)
+  -webkit-transition: $color-easy
+  -moz-transition:    $color-easy
+  -o-transition:      $color-easy
+  transition:         $color-easy
+
+a
+  +transition(color $easy-in)
+
+// slow background color effect
+=transition($bg-easy)
+  -webkit-transition: $bg-easy
+  -moz-transition:    $bg-easy
+  -o-transition:      $bg-easy
+  transition:         $bg-easy
+
+.skills ul li p,.box,.box-two,.post-all li a
+  +transition(background-color $easy-in)
+
+// skills bar animation
+=animation($skills-speed)
+  -webkit-animation: $skills-speed
+  -moz-animation:    $skills-speed
+  -o-animation:      $skills-speed
+  animation:         $skills-speed
+
+.skills ul li p
+  +animation(skills-bar $skills-speed linear)
+
+@-webkit-keyframes skills-bar
+  1%
+    width: $skills-start
+
+@-moz-keyframes skills-bar
+  1%
+    width: $skills-start
+
+@-o-keyframes skills-bar
+  1%
+    width: $skills-start
+
+@keyframes skills-bar
+  1%
+    width: $skills-start
+
+

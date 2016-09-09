@@ -1,0 +1,15 @@
+{
+  "name": "simple-portfolio-html5",
+  "title": "Simple Portfolio HTML5",
+  "description": "İş başvuru sırasında kullanılabilecek görselsiz HTML5 arayüz.",
+  "author": "Fatih Enes Gülay",
+  "homepage": "http://fatihenesgulay.com/",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "0.4.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}
